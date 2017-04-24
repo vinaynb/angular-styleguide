@@ -465,13 +465,20 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
   /* recommended */
   function SessionsController() {
       var vm = this;
-
+      
+      //variables
+      vm.sessions = [];
+      vm.title = 'Sessions';
+      
+      //core
       vm.gotoSession = gotoSession;
       vm.refresh = refresh;
       vm.search = search;
-      vm.sessions = [];
-      vm.title = 'Sessions';
-
+      
+      //helpers
+      vm.checkStringForLength = checkStringForLength;
+      self.checkStringForNumber = checkStringForNumber;
+      
       ////////////
 
       function gotoSession() {
@@ -483,6 +490,14 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
       }
 
       function search() {
+        /* */
+      }
+      
+      function checkStringForLength() {
+        /* */
+      }
+      
+      function checkStringForNumber() {
         /* */
       }
   }
