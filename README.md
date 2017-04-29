@@ -4,7 +4,7 @@
 There are multiple versions of Angular, and thus there are multiple versions of the guide. Choose your guide appropriately.
 
 ### Angular 1 Style Guide
-[The Angular 1 Style Guide](https://github.com/johnpapa/angular-styleguide/tree/master/a1/README.md).
+[The Angular 1 Style Guide](https://github.com/vinaynb/angular-styleguide/tree/master/a1).
 
 ### Angular 2 Style Guide
 [The Angular 2 Style Guide](https://github.com/johnpapa/angular-styleguide/tree/master/a2/README.md).
