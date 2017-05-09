@@ -92,6 +92,8 @@
 ## Services
 ### Sample Service file  
   ```javascript
+  (function() {
+  
   angular
         .module('cloudMasterApp')
         .controller('RegistrationController', RegistrationController);
@@ -131,6 +133,7 @@
           // implementation details go here
       }
   }
+  })();
   ```
 
 **[Back to top](#table-of-contents)**
@@ -139,6 +142,8 @@
 ### Sample Directive File  
 
   ```javascript
+  (function() {
+  
   angular
     .module('app.widgets')
     .directive('myCalendarRange', myCalendarRange);
@@ -155,4 +160,5 @@
         /* */
       }
   }
+  })();
   ```
