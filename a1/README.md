@@ -93,12 +93,13 @@
 ### Sample Service file  
   ```javascript
   (function() {
+  'use strict';
   
   angular
         .module('cloudMasterApp')
-        .controller('RegistrationController', RegistrationController);
+        .controller('testService', service);
 
-  function RegistrationController($http, $location, $q, exception, logger) {
+  function service($http, $location, $q, exception, logger) {
       var isPrimed = false;
       var primePromise;
 
@@ -143,22 +144,23 @@
 
   ```javascript
   (function() {
-  
-  angular
-    .module('app.widgets')
-    .directive('myCalendarRange', myCalendarRange);
+    'use strict';
+    
+    angular
+      .module('app.widgets')
+      .directive('testDirective', directive);
 
-  function myCalendarRange() {
-      var directive = {
-          link: link,
-          templateUrl: '/template/is/located/here.html',
-          restrict: 'EA'
-      };
-      return directive;
+    function directive() {
+        var directive = {
+            link: link,
+            templateUrl: '/template/is/located/here.html',
+            restrict: 'EA'
+        };
+        return directive;
 
-      function link(scope, element, attrs) {
-        /* */
-      }
-  }
+        function link(scope, element, attrs) {
+          /* */
+        }
+    }
   })();
   ```
