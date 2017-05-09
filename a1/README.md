@@ -38,8 +38,17 @@
 
 ### Sample Controller file
   ```javascript
+  (function() {
+    'use strict';
+
+    angular
+        .module('app')
+        .controller('testCtrl', controller);
+
+    controller.$inject = [];
+    
   /* recommended */
-  function SessionsController() {
+  function controller() {
       var vm = this;
       
       //variables
@@ -77,6 +86,8 @@
         /* */
       }
   }
+  })();
+    
   ```
 ## Services
 ### Sample Service file  
