@@ -99,7 +99,7 @@
         .module('cloudMasterApp')
         .controller('testService', service);
 
-  function service($http, $location, $q, exception, logger) {
+  function service() {
       var isPrimed = false;
       var primePromise;
 
